@@ -31,8 +31,7 @@ p.indent {text-indent:40px;}
 }
 #bigPlayText {
 	position: absolute ;
-	top: 687px;
-	left: 68px ;
+	
     font: black ;
 	font-weight: bolder ;
     font-size: 28px ;
@@ -125,7 +124,18 @@ px      68    160    252    344    436    528    620    712
 	.content-element p {
 		font-size:16px;
 	}
-	
+	#teamPhoto {
+		position:absolute ;
+		top: 0 ;
+		left: 0 ;
+		width: 768 ;
+		height: 576 ;
+		background: url('../../images/dossier-06/womens_volleyball_portrait.png') no-repeat 0 0;
+	}
+	#bigPlayText{
+		top: 510px;
+		left: 68px ;
+	}
 }
 
 
@@ -151,6 +161,18 @@ px      68    160    252    344    436    528    620    712    804    896
 	#arrow {bottom:20px;right:260px;}
 	.content-element p {
 		font-size:16px;
+	}
+	#teamPhoto {
+		position:absolute ;
+		top: 0 ;
+		left: 0 ;
+		width: 1024 ;
+		height: 768 ;
+		background: url('../../images/dossier-06/womens_volleyball_landscape.png') no-repeat 0 0;
+	}
+	#bigPlayText{
+		top: 687px;
+		left: 68px ;
 	}
 	
 }
