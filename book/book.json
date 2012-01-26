@@ -1,0 +1,18 @@
+{
+    "hpub": 1,
+	"title":	"Pegasus Magazine -  iPad - March",
+	"author": 	"UCF Marketing",
+	"url":		"book://www.ucf.edu",
+	
+	"contents":	[
+        "06.html"                
+	],
+	
+	
+	"creator": ["UCF Marketing"],
+	"publisher": "UCF Marketing",
+	"date": "2012-01-19",
+	"orientation": "both",
+    
+    "-baker-index-height": 200
+}
