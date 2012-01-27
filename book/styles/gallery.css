@@ -1,0 +1,20 @@
+#photoswipe .gallery ol, ul {
+    display: inline ;
+    padding: 0 ;
+    margin-right: 60px ;
+}
+#photoswipe .gallery li {
+    display: inline-block ;
+    margin-left: 30px ;
+    position: relative ;
+    overflow: hidden ;
+    
+    padding: 0 ;
+    width: 150px ;
+    height: 150px ;
+    
+    vertical align: none ;
+}
+#photoswipe .gallery li a {
+    text-decoration: none ;
+}
