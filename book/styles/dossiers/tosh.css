@@ -19,37 +19,53 @@ p.indent {text-indent:40px;}
 @font-face { font-family: Gotham; src: url('../../fonts/GothaXNarBoo.otf'); }
 @font-face { font-family: Gotham; font-weight: bold; src: url('../../fonts/GothaXNarBol.otf'); }
 
+body {
+	background-color: #FFF ;
+}
+#toshSplash{
+	background-color: #d6a718 ;
+}
+#splashText p {
+	color: #FFF ;
+	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-size: 14pt ;
+}
+#splashText .bold {
+	font-size: 20px ;
+	font-weight: bold ;
+}
 /* Splash */
 .dossier-start-bg {
 	padding-top:0;
 	/*overflow:hidden;*/
 }
-#teamPhoto {
-	position:absolute ;
-	top: 0 ;
-	left: 0 ;
-	width: 1024 ;
-	height: 768 ;
-	background: url('../../images/volleyball/womens_volleyball.png') no-repeat 0 0;
-	display:inline ;
-}
-#bigPlayText {
-	position: absolute ;
-	
-    font: black ;
-	font-weight: bold ;
-    font-size: 28px ;
-    font-family: Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
-}
-#aboutTheTeam p {
-	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
-}
 /* story */
-#mainContent {
-	position: absolute ;
+#contentArea {
+	background-color: #FFF ;
+	color: #000 ;
 }
-#facebookComments {
+#contentArea *{
+	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	color: #000 ;
 	
+}
+#leftColumn {
+	position: absolute ;
+	left: 28px ; 
+}
+
+#leftColumn p {
+	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-size: 12pt ;
+}
+#leftColumn h2 {
+	font-size: 24pt ; 
+	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-weight: bold ;
+}
+#rightColumn p {
+	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-size: 14pt ; 
 }
 
 #arrow {
@@ -65,7 +81,6 @@ p.indent {text-indent:40px;}
 .content-element p {
 	line-height:1.4em;
 	margin-bottom:1em;
-	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
 }
 .content-element h2 {
 	font-size:200%;
@@ -126,30 +141,44 @@ px      68    160    252    344    436    528    620    712
  
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 	.dossier-start-bg {height:576px;}
-	#teamPhoto { height:576px;width:768px; display: inline;}
 	
 	#arrow {bottom:60px;right:180px;}
 	.content-element p {
 		font-size:16px;
 	}
-	#teamPhoto {
+	#toshSplash {
 		position:absolute ;
 		top: 0 ;
 		left: 0 ;
-		width: 768 ;
-		height: 576 ;
-		background: url('../../images/volleyball/womens_volleyball_portrait.png') no-repeat 0 0;
+		width: 768px ;
+		height: 1024px ;
+		background: url('../../images/tosh/tosh.jpg') no-repeat 0 0;
 	}
-	#bigPlayText{
-		top: 510px;
-		left: 68px ;
-		font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	#splashText{
+		position: absolute ;
+		left: 370px ;
+		width: 344px ;
+		top: 100px ;
 	}
-	#aboutTheTeam, #facebookComments {
-		 width:620px;
-		 margin-left:0px; 
-		 
+	#contentArea {
+		position: absolute ;
+		top: 1024px ;
+		width: 768px ;
 	}
+	#rightColumn {
+		position: absolute ;
+		left: 216px ;
+	}
+	.two-wide: {
+		width: 160px ;
+		margin-left: 28px ;
+	}
+	.six-wide {
+		width: 528px ;
+		margin-right: 28px ;
+	}
+	
+	
 }
 
 
@@ -170,34 +199,45 @@ px      68    160    252    344    436    528    620    712    804    896
 
 @media only screen and (max-device-width: 1024px) and (orientation:landscape) {
 	.dossier-start-bg {height:768px;}
-	#teamPhoto {height:768px; width:1024px;}
 	
 	#arrow {bottom:20px;right:260px;}
 	.content-element p {
 		font-size:16px;
 	}
-	#aboutTheTeam {
-		 width:436px;
-		 margin-left:0px; 
-		 float: left;
-	}
-	#facebookComments {
-		 width:436px;
-		 margin-left:0px; 
-		 float: right;
-	}
-	#teamPhoto {
+	
+	#toshSplash {
 		position:absolute ;
 		top: 0 ;
 		left: 0 ;
-		width: 1024 ;
-		height: 768 ;
-		background: url('../../images/volleyball/womens_volleyball_landscape.png') no-repeat 0 0;
+		width: 1024px ;
+		height: 768px ;
+		background: url('../../images/tosh/tosh.jpg') no-repeat 0 0;
 	}
-	#bigPlayText{
-		top: 687px;
-		left: 68px ;
-		font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	#splashText {
+		position: absolute ;
+		left: 436px ;
+		top: 15px ;
+		width: 436px ;
+	}
+	#contentArea {
+		position: absolute ;
+		top:768px ;
+		width: 1024px ;
+	}
+	#leftColumn {
+		left: 56px ;
+	}
+	#rightColumn {
+		position: absolute ;
+		left: 280px ;
+	}8
+	.two-wide: {
+		/* really three wide */
+		width: 252px ;
+	}
+	.six-wide {
+		/* really 7 wide */
+		width: 712px ;
 	}
 	
 }

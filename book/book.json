@@ -5,6 +5,7 @@
 	"url":		"book://www.ucf.edu",
 	
 	"contents":	[
+        "tosh.html",
         "volleyball.html",
         "bucky.html"
 	],
