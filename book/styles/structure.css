@@ -161,7 +161,8 @@ px      68    160    252    344    436    528    620    712
  
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) { 
 	.dossier-start-bg {    height: 904px }
-	.medium-column { width:252px; background-color: #f00;}
+	.medium-column { width:344px;}
+	.content-element { width:712px ;}
 }
 
 
@@ -198,7 +199,7 @@ px      68    160    252    344    436    528    620    712    804    896
 	
 	.dossier-start-bg {    height: 648px }
 	
-	.medium-column { width:436px; background-color: #0F0;}
+	.medium-column { width:436px;}
 	
 }
 
