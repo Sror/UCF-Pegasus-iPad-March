@@ -1,0 +1,292 @@
+/*
+##########################################################################
+##########################################################################
+		Default Layout: 952px.
+		Content-Element width: 952px.
+		Gutters: 24px.
+		Outer content margins: 28px.
+		Leftover space for scrollbars @1024px: 32px.
+##########################################################################
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    
+##########################################################################
+##########################################################################
+*/
+
+.clear {clear:both;}
+p.indent {text-indent:40px;}
+
+body {
+	background-color: #000 ;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000 ;
+}
+
+/* story */
+#contentArea {
+	background-color: #FFF ;
+	color: #000 ;
+	margin-top:40px;
+}
+#contentArea *{
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000 ;
+	
+}
+#leftColumn {
+	position: absolute;
+	left: 28px;
+	width: 193px;
+}
+#leftWideColumn {
+	position: absolute ;
+	left: 28px ;
+}
+
+#leftColumn p {
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12pt ;
+	color: #000 ;
+}
+#rightColumn p {
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14pt ; 
+	margin-bottom: 0px ;
+	color: #000 ;
+}
+#boldMoveLabel {
+	position: absolute ;
+	background: url('../../images/bold_move/bold_move_text.png') no-repeat 0 0 ;
+	width: 154px ;
+	height: 19px ;
+}
+#filmStrip {
+	position: absolute ;
+	width: 86px ;
+	height: 111px ;
+	background: url('../../images/bold_move/filmstrip.png') no-repeat 0 0 ;
+}
+.content-element {
+	margin-top: 40px ;
+	margin-left: 68px ;
+}
+.content-element * {
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.content-element p {
+	line-height:1.4em;
+	margin-bottom:1em;
+}
+.content-element h2 {
+	font-size:200%;
+}
+.about:first-letter {
+	font-weight:700 ;
+	font-size: larger ;
+}
+
+
+/*
+##########################################################################
+##########################################################################
+		Tablet Layout: 768px.
+		Content-Element width: 712px.
+		Gutters: 24px.
+		Outer content margins: 28px.
+		Inherits styles from: Default Layout.
+##########################################################################
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    
+##########################################################################
+##########################################################################
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+
+	
+}
+
+
+/*
+##########################################################################
+##########################################################################
+		iPad Layout Portrait: 768px.
+		Content-Element width: 712px.
+		Gutters: 24px.
+		Outer content margins: 28px.
+		Inherits styles from: Default Layout.
+##########################################################################
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712   
+##########################################################################
+##########################################################################
+ */
+ 
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	.dossier-start-bg {height:576px;}
+	
+	#arrow {bottom:60px;right:180px;}
+	.content-element p {
+		font-size:16px;
+	}
+	
+	#leftColumn {
+		width: 160px ;
+	}
+	
+	#rightColumn {
+		position: absolute ;
+		left: 216px ;
+	}
+	#boldMove {
+		width: 768px ;
+		height: 1024px ;
+		background: url('../../images/bold_move/bold_move_bg_portrait.png') no-repeat 0 0 ;
+	}
+	#boldMoveLabel {
+		left: 28px ;
+		top: 40px ;
+	}
+	#videoPlayer {
+		position: absolute ;
+		left: 28px ;
+		top: 68px ;
+	}
+	#filmStrip {
+		left: 660px ;
+		top: 48px ;
+	
+	}
+	#rotate {
+		position: absolute ;
+		width: 156px ;
+		height: 173px ;
+		left: 306px ;
+		top: 575px ;
+		background: url('../../images/bold_move/rotate.png') no-repeat 0 0 ;
+	}
+}
+
+
+/*
+##########################################################################
+##########################################################################
+		iPad Layout Landscape: 1024px.
+		Content-Element width: 896px.
+		Gutters: 24px.
+		Outer content margins: 64px.
+		Inherits styles from: Default Layout.
+##########################################################################
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    
+##########################################################################
+##########################################################################
+*/
+
+@media only screen and (max-device-width: 1024px) and (orientation:landscape) {
+	.dossier-start-bg {height:768px;}
+	
+	#arrow {bottom:20px;right:260px;}
+	.content-element p {
+		font-size:16px;
+	}
+	#boldMove {
+		width: 1024px ;
+		height: 768px ;
+		background: url('../../images/bold_move/bold_move_bg_landscape.png') no-repeat 0 0 ;
+	}
+	#boldMoveLabel {
+		left: 160px ;
+		top: 160px ;
+	}
+	#videoPlayer {
+		position: absolute ;
+		left: 160px ;
+		top: 210px ;
+	}
+	#filmStrip {
+		left: 812px ;
+		top: 148px ;
+	}
+	
+	#contentArea {
+		position: absolute ;
+		top:768px ;
+		width: 1024px ;
+	}
+	#leftColumn {
+		left: 56px ;
+		width: 160px ;
+	}
+
+	#rightColumn {
+		position: absolute ;
+		left: 280px ;
+	}
+	
+}
+
+
+/*
+##########################################################################
+##########################################################################
+		Mobile Layout: 320px.
+		Content-Element width: 292px.
+		Gutters: 24px.
+		Outer content margins: 14px.
+		Inherits styles from: Default Layout.
+##########################################################################
+cols    1     2      3
+px      68    160    252    
+##########################################################################
+##########################################################################
+*/
+
+@media only screen and (max-width: 767px) {
+	
+	
+	
+}
+
+
+/*		
+##########################################################################
+##########################################################################
+		Wide Mobile Layout: 480px.
+		Content-Element width: 436px.
+		Gutters: 24px.
+		Outer content margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+#########################################################################
+cols    1     2      3      4      5
+px      68    160    252    344    436    
+##########################################################################
+##########################################################################
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+
+
+	
+}
+
+
+/*		
+##########################################################################
+##########################################################################
+	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+######################################################################### 
+##########################################################################
+*/
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+	
+}

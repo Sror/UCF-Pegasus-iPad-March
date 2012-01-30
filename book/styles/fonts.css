@@ -27,3 +27,6 @@ All fonts will be included here. For demo purposes, "Oswald" and
     src: url('../fonts/ptserif/pt_serif-web-regular-webfont.eot');
     src: url('../fonts/ptserif/pt_serif-web-regular-webfont.eot?iefix') format('eot'), url('../fonts/ptserif/pt_serif-web-regular-webfont.woff') format('woff'), url('../fonts/ptserif/pt_serif-web-regular-webfont.ttf') format('truetype'), url('../fonts/ptserif/pt_serif-web-regular-webfont.svg#webfontUKUF9e5Z') format('svg');
 }
+@font-face { font-family: Gotham; src: url('../../fonts/GothaBoo'); }
+@font-face { font-family: Gotham; font-weight: bold; src: url('../../fonts/GothaBol'); }
+@font-face { font-family: Gotham-Caption; src: url('../../fonts/GothaBoo'); }
