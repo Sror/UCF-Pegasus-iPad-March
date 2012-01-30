@@ -5,6 +5,8 @@
 	"url":		"book://www.ucf.edu",
 	
 	"contents":	[
+        "cover.html",
+        "spiritsplash.html",
         "tosh.html",
         "volleyball.html",
         "aboldmove.html",
