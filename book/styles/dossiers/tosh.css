@@ -16,18 +16,22 @@ px      68    160    252    344    436    528    620    712    804    896
 .clear {clear:both;}
 p.indent {text-indent:40px;}
 
-@font-face { font-family: Gotham; src: url('../../fonts/GothaXNarBoo.otf'); }
-@font-face { font-family: Gotham; font-weight: bold; src: url('../../fonts/GothaXNarBol.otf'); }
+@font-face { font-family: Gotham; src: url('../../fonts/GothaBoo'); }
+@font-face { font-family: Gotham; font-weight: bold; src: url('../../fonts/GothaBol'); }
+@font-face { font-family: Gotham-Caption; src: url('../../fonts/GothaBoo'); }
+
 
 body {
 	background-color: #FFF ;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000 ;
 }
 #toshSplash{
 	background-color: #d6a718 ;
 }
 #splashText p {
 	color: #FFF ;
-	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14pt ;
 }
 #splashText .bold {
@@ -43,40 +47,85 @@ body {
 #contentArea {
 	background-color: #FFF ;
 	color: #000 ;
+	margin-top:40px;
 }
 #contentArea *{
-	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000 ;
 	
 }
 #leftColumn {
+	position: absolute;
+	left: 28px;
+	width: 193px;
+}
+#leftWideColumn {
 	position: absolute ;
-	left: 28px ; 
+	left: 28px ;
 }
 
 #leftColumn p {
-	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12pt ;
-}
-#leftColumn h2 {
-	font-size: 24pt ; 
-	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
-	font-weight: bold ;
+	color: #000 ;
 }
 #rightColumn p {
-	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14pt ; 
+	margin-bottom: 0px ;
+	color: #000 ;
 }
-
+#contentArea h2 {
+	font-family:  Gotham-Caption, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20pt ;
+	font-weight: bold ; 
+}
+#contentArea .caption {
+	font-size: 10pt ;
+	font-weight: lighter ;
+}
+#secondContentArea .caption {
+	font-size: 10pt ;
+	font-weight: lighter ;
+}
+#blackArea {
+	background-color: #000 ;
+	position: absolute ;
+	background-image: url('../../images/tosh/ucf_knight_background.png') ;
+		background-repeat: no-repeat ;
+		background-position: 0 0 ;
+		
+}
+#stardom p {
+	position: absolute ;
+	color: #FFF ;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 #arrow {
 	position:absolute;
 }
+#rightColumnNarrow {
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14pt ; 
+	margin-bottom: 0px ;
+}
+#rightColumnNarrow p {
+	color: #000 ;
+}
+#rightColumnNarrow .question {
+	font-style: italic ;
+}
+#rightColumnNarrow .answer {
+	font-style: italic ;
+	font-weight: bold ;
+}
+
 .content-element {
 	margin-top: 40px ;
 	margin-left: 68px ;
 }
 .content-element * {
-	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-element p {
 	line-height:1.4em;
@@ -165,9 +214,22 @@ px      68    160    252    344    436    528    620    712
 		top: 1024px ;
 		width: 768px ;
 	}
+	#leftColumn {
+		width: 160px ;
+	}
+	#leftWideColumn {
+		position: absolute ;
+		width: 528px ;
+	}
 	#rightColumn {
 		position: absolute ;
 		left: 216px ;
+	}
+	#rightColumnNarrow {
+		position: absolute ;
+		left: 556px ;
+		width: 160px ;
+		margin-right: 28px ;
 	}
 	.two-wide: {
 		width: 160px ;
@@ -177,8 +239,39 @@ px      68    160    252    344    436    528    620    712
 		width: 528px ;
 		margin-right: 28px ;
 	}
-	
-	
+	#videoCaption {
+		position: absolute ;
+		left: 0px;
+		top: 950px ;
+	}
+	#videoBreak {
+		position: absolute ;
+		left: 28px ;
+		top: 2138px;
+	}
+	#secondContentArea {
+		position: absolute ;
+		width: 768px ;
+		top: 2473px ;
+		
+	}
+	#ucf_attire {
+		position: absolute ;
+		top: 645px ;
+	}
+	#blackArea {
+		position: absolute ;
+		top: 1550px ;
+		width: 768px ;
+		height: 530px ;
+	}
+	#stardom{
+		position: absolute ;
+		left: 396px ;
+		top: 50px ;
+		width: 280px ;
+		
+	}
 }
 
 
@@ -226,11 +319,23 @@ px      68    160    252    344    436    528    620    712    804    896
 	}
 	#leftColumn {
 		left: 56px ;
+		width: 160px ;
+	}
+	#leftColumnWide {
+		position: absolute ;
+		left: 56px ;
+		width: 528px ;
 	}
 	#rightColumn {
 		position: absolute ;
 		left: 280px ;
-	}8
+	}
+	#rightColumnNarrow {
+		position: absolute ;
+		left: 552px ;
+		width: 344px ;
+		margin-right: 28px ;
+	}
 	.two-wide: {
 		/* really three wide */
 		width: 252px ;
@@ -239,7 +344,40 @@ px      68    160    252    344    436    528    620    712    804    896
 		/* really 7 wide */
 		width: 712px ;
 	}
-	
+	#videoCaption {
+		position: absolute;
+		left: 2px;
+		top: 737px;
+	}
+	#videoBreak {
+		position: absolute;
+		left: 56px;
+		top: 1703px;
+	}
+	#secondContentArea {
+		position: absolute ;
+		left: 0px ;
+		width: 1024px ;
+		top: 2043px ;
+	}
+	#ucf_attire {
+		position: absolute ;
+		top: 510px ;
+	}
+	#blackArea {
+		position: absolute ;
+		top: 1250px ;
+		width: 1024px ;
+		height: 400px ;
+		
+	}
+	#stardom{
+		position: absolute ;
+		left: 396px ;
+		top: 50px ;
+		width: 436px ;
+		
+	}
 }
 
 
