@@ -21,13 +21,18 @@ body {
 	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000 ;
 }
+h3 {
+	font-size: 14pt;
+}
 
 /* story */
 #contentArea {
 	background-color: #FFF ;
 	color: #000 ;
 	margin-top:40px;
+
 }
+
 #spiritSplash {
 	position: absolute ;
 	left: 0px ;
@@ -60,14 +65,21 @@ body {
 }
 #leftColumn {
 	position: absolute;
-	left: 28px;
-	width: 193px;
+	left: 0px;
+	top: 1000px ;
+	background-color: #FFF ;
+	background: url('../../images/spirit_splash/text_box_drop_shadow.png') no-repeat 0 0 ;
+	padding-left: 28px ;
+	padding-top: 50px ;
 }
-#leftWideColumn {
-	position: absolute ;
-	left: 28px ;
+#videoPlayer {
+	width: 346px;
+	height: 220px ;
+	position: relative ;
+	margin-top: 30px ;
+	text-align: center;
+	margin: 0 auto ;
 }
-
 #leftColumn p {
 	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12pt ;
@@ -75,21 +87,53 @@ body {
 }
 #rightColumn p {
 	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14pt ; 
-	margin-bottom: 0px ;
+	font-size: 12pt ; 
 	color: #000 ;
 }
-#boldMoveLabel {
-	position: absolute ;
-	background: url('../../images/bold_move/bold_move_text.png') no-repeat 0 0 ;
-	width: 154px ;
-	height: 19px ;
+#fansCaption p {
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12pt ; 
+	color: #000 ;
 }
 #filmStrip {
 	position: absolute ;
-	width: 86px ;
-	height: 111px ;
-	background: url('../../images/bold_move/filmstrip.png') no-repeat 0 0 ;
+	width: 41px ;
+	height: 54px ;
+	right: -10	px ;
+	top: -15px ;
+	background: url('../../images/spirit_splash/filmstrip.png') no-repeat 0 0 ;
+}
+#sirKnight, #float {
+	width: 100%;
+	text-align: center ;
+}
+#rightColumn {
+	position: absolute ;
+	padding-left: 28px ;
+	top: 1000px ;
+}
+#cheerBox {
+	position: relative  ;
+	width: 343px ;
+	min-height: 226px ;
+	text-align: center ;
+	border: thin solid ;
+}
+#miniLeft {
+	position: relative ;
+	width: 186px ;
+	margin-top: 10px ;
+}
+#miniRight {
+	position: relative ;
+	width: 157px ;
+	margin-top: 15px ;
+}
+#UCFfooter {
+	position: absolute; 
+	
+	min-width: 660px ;
+	min-height: 339px ;
 }
 .content-element {
 	margin-top: 40px ;
@@ -109,7 +153,27 @@ body {
 	font-weight:700 ;
 	font-size: larger ;
 }
-
+#rightColumn .gold {
+	color: #ddb725 ;
+	font-weight: bold ;
+}
+#leftColumn .boldCaption {
+	font-size: .8em ;
+	font-weight: bold ;
+}
+#rightColumn .boldCaption {
+	font-size: .8em ;
+	font-weight: bold ;
+}
+#miniRight .boldCaption {
+	font-size: .8em ;
+	font-weight: bold ;
+}
+#fansCaption {
+		position: absolute ;
+		right: 0px ;
+		top: 0px ;
+	}
 
 /*
 ##########################################################################
@@ -157,12 +221,17 @@ px      68    160    252    344    436    528    620    712
 	}
 	
 	#leftColumn {
-		width: 160px ;
+		top: 820px ;
+		width: 344px ;
+		padding-right: 28px;
 	}
-	
+	#leftContent{
+		width: 288px ;
+	}
 	#rightColumn {
-		position: absolute ;
-		left: 216px ;
+		left: 372px ;
+		width: 344px ;
+		padding-top: 80px ;
 	}
 	#talesOfTradition {
 		left: 0px ;
@@ -174,6 +243,11 @@ px      68    160    252    344    436    528    620    712
 	#ducky {
 		left: 528px ;
 	}
+	#UCFfooter {
+		top: 2600px;
+		left: 56px ;
+	}
+	
 }
 
 
@@ -209,6 +283,27 @@ px      68    160    252    344    436    528    620    712    804    896
 	}
 	#ducky {
 		left: 712px ;
+	}
+	#leftColumn {
+		top: 885px ;
+		width: 436px ;
+		padding-right: 28px;
+		background-image: url('../../images/spirit_splash/text_box_drop_shadow_landscape.png')  ;
+		background-repeat: no-repeat ;
+		background-position: right top;
+	}
+	#rightColumn {
+		left: 492px ;
+		width: 436px ;
+		padding-top: 120px ;
+	}
+	#cheerBox {
+		width: 343px ;
+		left: 46px ;
+	}
+	#UCFfooter {
+		top: 2450px;
+		left: 160px ;
 	}
 }
 
