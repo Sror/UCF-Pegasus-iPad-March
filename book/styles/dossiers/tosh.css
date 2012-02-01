@@ -71,7 +71,7 @@ body {
 }
 #rightColumn p {
 	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14pt ; 
+	font-size: 12pt ; 
 	margin-bottom: 0px ;
 	color: #000 ;
 }
@@ -242,26 +242,26 @@ px      68    160    252    344    436    528    620    712
 	#videoCaption {
 		position: absolute ;
 		left: 0px;
-		top: 950px ;
+		top: 700px ;
 	}
 	#videoBreak {
 		position: absolute ;
 		left: 28px ;
-		top: 2138px;
+		top: 1898px;
 	}
 	#secondContentArea {
 		position: absolute ;
 		width: 768px ;
-		top: 2473px ;
+		top: 2253px ;
 		
 	}
 	#ucf_attire {
 		position: absolute ;
-		top: 645px ;
+		top: 510px ;
 	}
 	#blackArea {
 		position: absolute ;
-		top: 1550px ;
+		top: 1150px ;
 		width: 768px ;
 		height: 530px ;
 	}
@@ -352,21 +352,21 @@ px      68    160    252    344    436    528    620    712    804    896
 	#videoBreak {
 		position: absolute;
 		left: 56px;
-		top: 1703px;
-	}
+		top: 1463px;
+	} /* 1703 240 */
 	#secondContentArea {
 		position: absolute ;
 		left: 0px ;
 		width: 1024px ;
-		top: 2043px ;
+		top: 1803px ;
 	}
 	#ucf_attire {
 		position: absolute ;
-		top: 510px ;
+		top: 270px ;
 	}
 	#blackArea {
 		position: absolute ;
-		top: 1250px ;
+		top: 905px ;
 		width: 1024px ;
 		height: 400px ;
 		

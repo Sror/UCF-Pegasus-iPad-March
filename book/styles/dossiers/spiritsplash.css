@@ -92,7 +92,8 @@ h3 {
 }
 #fansCaption p {
 	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12pt ; 
+	font-size: .8em ;
+	font-weight: bold ;
 	color: #000 ;
 }
 #filmStrip {
@@ -126,8 +127,10 @@ h3 {
 }
 #miniRight {
 	position: relative ;
-	width: 157px ;
+	width: 147px ;
 	margin-top: 15px ;
+	text-align: left ;
+	margin-left: 10px ;
 }
 #UCFfooter {
 	position: absolute; 
@@ -247,7 +250,14 @@ px      68    160    252    344    436    528    620    712
 		top: 2600px;
 		left: 56px ;
 	}
-	
+	/*#float {
+		position: relative;
+		width: 344px ;
+		height: 258px ;
+		background: url('../../images/spirit_splash/parade_float.png') no-repeat 0 0 ;
+		background-size: 100% 100% ;
+		display: inline ;
+	}*/
 }
 
 
@@ -297,13 +307,26 @@ px      68    160    252    344    436    528    620    712    804    896
 		width: 436px ;
 		padding-top: 120px ;
 	}
+	
 	#cheerBox {
-		width: 343px ;
-		left: 46px ;
+		/*width: 343px ;*/
+		width: 436px ;
+		/*left: 46px ;*/
 	}
 	#UCFfooter {
-		top: 2450px;
+		top: 2550px;
 		left: 160px ;
+	}
+	#miniLeft {
+		position: relative ;
+		width: 235px ;
+		margin-top: 10px ;
+	}
+	#miniRight {
+		position: relative ;
+		width: 191px ;
+		margin-top: 15px ;
+		margin-left: 10px ;
 	}
 }
 

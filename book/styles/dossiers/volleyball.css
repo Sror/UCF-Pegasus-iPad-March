@@ -16,9 +16,6 @@ px      68    160    252    344    436    528    620    712    804    896
 .clear {clear:both;}
 p.indent {text-indent:40px;}
 
-@font-face { font-family: Gotham; src: url('../../fonts/GothaXNarBoo.otf'); }
-@font-face { font-family: Gotham; font-weight: bold; src: url('../../fonts/GothaXNarBol.otf'); }
-
 /* Splash */
 .dossier-start-bg {
 	padding-top:0;
@@ -35,14 +32,15 @@ p.indent {text-indent:40px;}
 }
 #bigPlayText {
 	position: absolute ;
-	
-    font: black ;
+	color: #000 ;
 	font-weight: bold ;
     font-size: 28px ;
     font-family: Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
 }
 #aboutTheTeam p {
 	font-family:  Gotham, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+	font-size: 12pt ;
+	color: #000;
 }
 /* story */
 #mainContent {
