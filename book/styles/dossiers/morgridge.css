@@ -1,0 +1,247 @@
+/*
+##########################################################################
+##########################################################################
+		Default Layout: 952px.
+		Content-Element width: 952px.
+		Gutters: 24px.
+		Outer content margins: 28px.
+		Leftover space for scrollbars @1024px: 32px.
+##########################################################################
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    
+##########################################################################
+##########################################################################
+*/
+
+.clear {clear:both;}
+p.indent {text-indent:40px;}
+
+body {
+	background-color: #FFF ;
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000 ;
+}
+
+/* story */
+#contentArea {
+	background-color: #FFF ;
+	color: #000 ;
+	margin-top:40px;
+}
+#contentArea *{
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000 ;
+	
+}
+#morgridge {
+	position: absolute ;
+}
+#leftColumn h3 {
+	color #000 ;
+	font-size: 14pt;
+	font-weight: bold ;
+}
+#leftColumn p {
+	color: #000 ;
+	font-size: 12pt ;
+	line-height: 1.3em ;
+}
+.content-element {
+	margin-top: 40px ;
+	margin-left: 68px ;
+}
+.content-element * {
+	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.content-element p {
+	line-height:1.4em;
+	margin-bottom:1em;
+}
+.content-element h2 {
+	font-size:200%;
+}
+.about:first-letter {
+	font-weight:700 ;
+	font-size: larger ;
+}
+
+
+/*
+##########################################################################
+##########################################################################
+		Tablet Layout: 768px.
+		Content-Element width: 712px.
+		Gutters: 24px.
+		Outer content margins: 28px.
+		Inherits styles from: Default Layout.
+##########################################################################
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    
+##########################################################################
+##########################################################################
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+
+	
+}
+
+
+/*
+##########################################################################
+##########################################################################
+		iPad Layout Portrait: 768px.
+		Content-Element width: 712px.
+		Gutters: 24px.
+		Outer content margins: 28px.
+		Inherits styles from: Default Layout.
+##########################################################################
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712   
+##########################################################################
+##########################################################################
+ */
+ 
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	.dossier-start-bg {height:576px;}
+	
+	#arrow {bottom:60px;right:180px;}
+	.content-element p {
+		font-size:16px;
+	}
+
+	#morgridge {
+		background: url('../../images/morgridge/morgridge_bg_portrait.png') no-repeat 0 0;
+		height: 1024px ;
+		width: 768px ;
+	}
+	#morgridgeText {
+		position: absolute ;
+		left: 28px ;
+		top: 675px ;
+	}
+	#leftColumn {
+		position: absolute ;
+		width: 464px ;
+		float: left ;
+		margin-top: 20px ;
+	}
+	#rightColumn {
+		position: absolute;
+		float: right;
+		left: 464px ;
+		width: 304px ;
+		height: 349px ;
+		background: url('../../images/morgridge/rotate.png') no-repeat 86 95 ;
+	}
+	#leftColumn p {
+		line-height: 1.4em ;
+	}
+	
+}
+
+
+/*
+##########################################################################
+##########################################################################
+		iPad Layout Landscape: 1024px.
+		Content-Element width: 896px.
+		Gutters: 24px.
+		Outer content margins: 64px.
+		Inherits styles from: Default Layout.
+##########################################################################
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    
+##########################################################################
+##########################################################################
+*/
+
+@media only screen and (max-device-width: 1024px) and (orientation:landscape) {
+	.dossier-start-bg {height:768px;}
+	
+	#arrow {bottom:20px;right:260px;}
+	.content-element p {
+		font-size:16px;
+	}
+	#morgridge {
+		background: url('../../images/morgridge/morgridge_bg_landscape.png') no-repeat 0 0;
+		height: 768px ;
+		width: 1024px ;
+	}
+	
+	#morgridgeText {
+		position: absolute ;
+		left: 28px ;
+		top: 616px ;
+	}
+	#leftColumn {
+		position: absolute ;
+		width: 968px ;
+	}
+	
+}
+
+
+/*
+##########################################################################
+##########################################################################
+		Mobile Layout: 320px.
+		Content-Element width: 292px.
+		Gutters: 24px.
+		Outer content margins: 14px.
+		Inherits styles from: Default Layout.
+##########################################################################
+cols    1     2      3
+px      68    160    252    
+##########################################################################
+##########################################################################
+*/
+
+@media only screen and (max-width: 767px) {
+	
+	
+	
+}
+
+
+/*		
+##########################################################################
+##########################################################################
+		Wide Mobile Layout: 480px.
+		Content-Element width: 436px.
+		Gutters: 24px.
+		Outer content margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+#########################################################################
+cols    1     2      3      4      5
+px      68    160    252    344    436    
+##########################################################################
+##########################################################################
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+
+
+	
+}
+
+
+/*		
+##########################################################################
+##########################################################################
+	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+######################################################################### 
+##########################################################################
+*/
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+	
+}
