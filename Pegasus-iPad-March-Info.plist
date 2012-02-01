@@ -31,8 +31,7 @@
 		<dict>
         	<key>CFBundleIconFiles</key>
 		    <array>
-		        <string>Newsstand-Cover-Icon.png</string>
-            	<string>Newsstand-Cover-Icon@2x.png</string>
+		        <string>newsstand-icon.png</string>
 		    </array>
 		    <key>UINewsstandBindingType</key>
 	        <string>UINewsstandBindingTypeMagazine</string>
