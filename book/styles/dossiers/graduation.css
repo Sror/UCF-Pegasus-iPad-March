@@ -18,8 +18,9 @@ p.indent {text-indent:40px;}
 
 body {
 	background-color: #FFF ;
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family:  'ColaborateBoldRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000 ;
+	font-size: 24pt ;
 }
 
 .thumbnail {

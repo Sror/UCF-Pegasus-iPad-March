@@ -30,3 +30,13 @@ All fonts will be included here. For demo purposes, "Oswald" and
 @font-face { font-family: Gotham; src: url('../../fonts/GothaBoo'); }
 @font-face { font-family: Gotham; font-weight: bold; src: url('../../fonts/GothaBol'); }
 @font-face { font-family: Gotham-Caption; src: url('../../fonts/GothaBoo'); }
+
+@font-face {
+	font-family: Colab; 
+	src:url('../../fonts/Colaborate/ColabReg.otf'); 
+}
+@font-face {
+	font-family: Colab; 
+	font-weight: bold; 
+	src: url('../../fonts/Colaborate/ColabBol.otf') ;
+}

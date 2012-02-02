@@ -65,7 +65,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UINewsstandApp</key>
-	<true/>
+	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
