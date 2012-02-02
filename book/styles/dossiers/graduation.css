@@ -16,30 +16,18 @@ px      68    160    252    344    436    528    620    712    804    896
 .clear {clear:both;}
 p.indent {text-indent:40px;}
 
-
-
 body {
 	background-color: #FFF ;
 	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000 ;
 }
-#toshSplash{
-	background-color: #d6a718 ;
+
+.thumbnail {
+	float: left ;
+	width: 250px ;
+	margin: 0 15px 15px 0 ;
 }
-#splashText p {
-	color: #FFF ;
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14pt ;
-}
-#splashText .bold {
-	font-size: 20px ;
-	font-weight: bold ;
-}
-/* Splash */
-.dossier-start-bg {
-	padding-top:0;
-	/*overflow:hidden;*/
-}
+
 /* story */
 #contentArea {
 	background-color: #FFF ;
@@ -51,72 +39,17 @@ body {
 	color: #000 ;
 	
 }
-#leftColumn {
-	position: absolute;
-	left: 28px;
-	width: 193px;
-}
-#leftWideColumn {
-	position: absolute ;
-	left: 28px ;
-}
 
-#leftColumn p {
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12pt ;
-	color: #000 ;
-}
-#rightColumn p {
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12pt ; 
-	margin-bottom: 0px ;
-	color: #000 ;
-}
-#contentArea h2 {
-	font-family:  Gotham-Caption, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 20pt ;
-	font-weight: bold ; 
-}
-#contentArea .caption {
-	font-size: 10pt ;
-	font-weight: lighter ;
-}
-#secondContentArea .caption {
-	font-size: 10pt ;
-	font-weight: lighter ;
-}
-#blackArea {
-	background-color: #000 ;
-	position: absolute ;
-	background-image: url('../../images/tosh/ucf_knight_background.png') ;
-		background-repeat: no-repeat ;
-		background-position: 0 0 ;
-		
-}
-#stardom p {
-	position: absolute ;
-	color: #FFF ;
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-#arrow {
-	position:absolute;
-}
-#rightColumnNarrow {
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14pt ; 
-	margin-bottom: 0px ;
-}
-#rightColumnNarrow p {
-	color: #000 ;
-}
-#rightColumnNarrow .question {
-	font-style: italic ;
-}
-#rightColumnNarrow .answer {
-	font-style: italic ;
+#leftColumn h3 {
+	color #000 ;
+	font-size: 14pt;
 	font-weight: bold ;
 }
-
+#leftColumn p {
+	color: #000 ;
+	font-size: 12pt ;
+	line-height: 1.3em ;
+}
 .content-element {
 	margin-top: 40px ;
 	margin-left: 68px ;
@@ -135,19 +68,8 @@ body {
 	font-weight:700 ;
 	font-size: larger ;
 }
-a:link {
-	text-decoration: none ;
-	font-weight: bold ;
-	border-bottom: none ;
-}
-.photoCaption {
-	font-style: italic ;
-	font-size: .85em ;
-}
-.captionLabel {
-	font-style: normal ;
-	font-size: .85em ;
-}
+
+
 /*
 ##########################################################################
 ##########################################################################
@@ -192,83 +114,25 @@ px      68    160    252    344    436    528    620    712
 	.content-element p {
 		font-size:16px;
 	}
-	#toshSplash {
-		position:absolute ;
-		top: 0 ;
-		left: 0 ;
-		width: 768px ;
-		height: 1024px ;
-		background: url('../../images/tosh/tosh.jpg') no-repeat 0 0;
-	}
-	#splashText{
-		position: absolute ;
-		left: 370px ;
-		width: 344px ;
-		top: 100px ;
-	}
-	#contentArea {
-		position: absolute ;
-		top: 1024px ;
-		width: 768px ;
-	}
+
 	#leftColumn {
-		width: 160px ;
-	}
-	#leftWideColumn {
 		position: absolute ;
-		width: 528px ;
+		width: 464px ;
+		float: left ;
+		margin-top: 20px ;
 	}
 	#rightColumn {
-		position: absolute ;
-		left: 216px ;
+		position: absolute;
+		float: right;
+		left: 464px ;
+		width: 304px ;
+		height: 349px ;
+		background: url('../../images/morgridge/rotate.png') no-repeat 86 95 ;
 	}
-	#rightColumnNarrow {
-		position: absolute ;
-		left: 556px ;
-		width: 160px ;
-		margin-right: 28px ;
+	#leftColumn p {
+		line-height: 1.4em ;
 	}
-	.two-wide: {
-		width: 160px ;
-		margin-left: 28px ;
-	}
-	.six-wide {
-		width: 528px ;
-		margin-right: 28px ;
-	}
-	#videoCaption {
-		position: absolute ;
-		left: 0px;
-		top: 700px ;
-	}
-	#videoBreak {
-		position: absolute ;
-		left: 28px ;
-		top: 1898px;
-	}
-	#secondContentArea {
-		position: absolute ;
-		width: 768px ;
-		top: 2253px ;
-		
-	}
-	#ucf_attire {
-		position: absolute ;
-		top: 510px ;
-	}
-	#blackArea {
-		position: absolute ;
-		top: 1150px ;
-		width: 768px ;
-		height: 530px ;
-	}
-	#stardom{
-		position: absolute ;
-		left: 396px ;
-		top: 50px ;
-		width: 280px ;
-		
-	}
+	
 }
 
 
@@ -295,86 +159,11 @@ px      68    160    252    344    436    528    620    712    804    896
 		font-size:16px;
 	}
 	
-	#toshSplash {
-		position:absolute ;
-		top: 0 ;
-		left: 0 ;
-		width: 1024px ;
-		height: 768px ;
-		background: url('../../images/tosh/tosh.jpg') no-repeat 0 0;
-	}
-	#splashText {
-		position: absolute ;
-		left: 436px ;
-		top: 15px ;
-		width: 436px ;
-	}
-	#contentArea {
-		position: absolute ;
-		top:768px ;
-		width: 1024px ;
-	}
 	#leftColumn {
-		left: 56px ;
-		width: 160px ;
-	}
-	#leftColumnWide {
 		position: absolute ;
-		left: 56px ;
-		width: 528px ;
+		width: 968px ;
 	}
-	#rightColumn {
-		position: absolute ;
-		left: 280px ;
-	}
-	#rightColumnNarrow {
-		position: absolute ;
-		left: 552px ;
-		width: 344px ;
-		margin-right: 28px ;
-	}
-	.two-wide: {
-		/* really three wide */
-		width: 252px ;
-	}
-	.six-wide {
-		/* really 7 wide */
-		width: 712px ;
-	}
-	#videoCaption {
-		position: absolute;
-		left: 2px;
-		top: 737px;
-	}
-	#videoBreak {
-		position: absolute;
-		left: 56px;
-		top: 1463px;
-	} /* 1703 240 */
-	#secondContentArea {
-		position: absolute ;
-		left: 0px ;
-		width: 1024px ;
-		top: 1803px ;
-	}
-	#ucf_attire {
-		position: absolute ;
-		top: 270px ;
-	}
-	#blackArea {
-		position: absolute ;
-		top: 905px ;
-		width: 1024px ;
-		height: 400px ;
-		
-	}
-	#stardom{
-		position: absolute ;
-		left: 396px ;
-		top: 50px ;
-		width: 436px ;
-		
-	}
+	
 }
 
 

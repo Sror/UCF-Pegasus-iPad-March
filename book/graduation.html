@@ -1,0 +1,52 @@
+<!-- this page is unused in the March issue, but can be used as an example of a working thumbnail/popup gallery using photoswipe (jquery). -->
+<!-- Documentation/files at photoswipe.com -->
+<html>
+	<head>
+    	<title>Graduation</title>
+		<meta charset="utf-8">
+        <!--Prevent pinch to zoom on iOS devices-->
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+        <!--Allow saving as a web app on the home screen on iOS Devices (doesn't apply in Baker)-->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!--If the page is saved as a web app, the statusbar will be black-translucent (doesn't apply in Baker)-->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <!--Prevent phone number detection on iOS devices-->
+        <meta name="format-detection" content="telephone=no" />
+        <link href="styles/photoswipe.css" type="text/css" rel="stylesheet"/> <!--required -->
+    	<link href="styles/gallery.css" type="text/css" rel="stylesheet"/> <!-- not required, just used to style things a bit nicer -->
+        <link type="text/css" href="styles/styles.css" rel="stylesheet" /> <!-- not photoswipe related -->
+        <link type="text/css" href="styles/dossiers/graduation.css" rel="stylesheet" /> <!-- not photoswipe related -->
+        <link type="text/css" href="styles/jquery.mobile-1.0.min.css" /> <!-- disabled, see notes re: jquery mobile below -->
+        <script src="js/jquery.min.js" type="text/javascript"></script> <!-- required -->
+        <!-- <script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>--> <!-- not required for function but useful depending on styling. disabled for performance since it's unused at the moment. -->
+        <script src="js/klass.min.js" type="text/javascript"></script> <!-- required, photoswipe author says next rev will deprecate this -->
+    	<script src="js/code.photoswipe-3.0.4.min.js" type="text/javascript"></script> <!-- required -->
+        <script src="js/dossiers/graduation.js" type="text/javascript"></script> <!-- not required but best practice to separate js from html. the code contained is required -->
+    </head>
+    <body>
+    	<div id="graduation">
+        	<!-- photoswipe is being applied to "#gallery a" selector. photoswipe div is unnecessary for functionality -->
+            <!-- alt tags generate captions in slideshow -->
+        	<div id="photoswipe">
+    			<ul id ="gallery" class="gallery">
+                	<li><a href="images/graduation/grad_01.jpg"><img src="images/graduation/thumbs/grad_01.jpg" class="thumbnail" alt="Grad 01"/></a></li>
+                    <li><a href="images/graduation/grad_02.jpg"><img src="images/graduation/thumbs/grad_02.jpg" class="thumbnail" alt="Grad 02"/></a></li>
+                    <li><a href="images/graduation/grad_03.jpg"><img src="images/graduation/thumbs/grad_03.jpg" class="thumbnail" alt="Grad 03"/></a></li>
+                    <li><a href="images/graduation/grad_04.jpg"><img src="images/graduation/thumbs/grad_04.jpg" class="thumbnail" alt="Grad 04"/></a></li>
+                    <li><a href="images/graduation/grad_05.jpg"><img src="images/graduation/thumbs/grad_05.jpg" class="thumbnail" alt="Grad 05"/></a></li>
+                    <li><a href="images/graduation/grad_06.jpg"><img src="images/graduation/thumbs/grad_06.jpg" class="thumbnail" alt="Grad 06"/></a></li>
+                    <li><a href="images/graduation/grad_07.jpg"><img src="images/graduation/thumbs/grad_07.jpg" class="thumbnail" alt="Grad 07"/></a></li>
+                    <li><a href="images/graduation/grad_08.jpg"><img src="images/graduation/thumbs/grad_08.jpg" class="thumbnail" alt="Grad 08"/></a></li>
+                    <li><a href="images/graduation/grad_09.jpg"><img src="images/graduation/thumbs/grad_09.jpg" class="thumbnail" alt="Grad 09"/></a></li>
+                    <li><a href="images/graduation/grad_10.jpg"><img src="images/graduation/thumbs/grad_10.jpg" class="thumbnail" alt="Grad 10"/></a></li>
+                    <li><a href="images/graduation/grad_11.jpg"><img src="images/graduation/thumbs/grad_11.jpg" class="thumbnail" alt="Grad 11"/></a></li>
+                    <li><a href="images/graduation/grad_12.jpg"><img src="images/graduation/thumbs/grad_12.jpg" class="thumbnail" alt="Grad 12"/></a></li>
+                    <li><a href="images/graduation/grad_13.jpg"><img src="images/graduation/thumbs/grad_13.jpg" class="thumbnail" alt="Grad 13"/></a></li>
+                    <li><a href="images/graduation/grad_14.jpg"><img src="images/graduation/thumbs/grad_14.jpg" class="thumbnail" alt="Grad 14"/></a></li>
+                    <li><a href="images/graduation/grad_15.jpg"><img src="images/graduation/thumbs/grad_15.jpg" class="thumbnail" alt="Grad 15"/></a></li>
+                    <li><a href="images/graduation/grad_16.jpg"><img src="images/graduation/thumbs/grad_16.jpg" class="thumbnail" alt="Grad 16"/></a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
