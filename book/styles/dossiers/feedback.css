@@ -8,7 +8,7 @@
 		Leftover space for scrollbars @1024px: 32px.
 ##########################################################################
 cols    1     2      3      4      5      6      7      8      9      10
-px      68    160    252    344    436    528    620    712    804    896    @
+px      68    160    252    344    436    528    620    712    804    896    
 ##########################################################################
 ##########################################################################
 */
@@ -17,58 +17,42 @@ px      68    160    252    344    436    528    620    712    804    896    @
 p.indent {text-indent:40px;}
 
 body {
-	background-color: #FFF ;
+	background-color: #edbc19 ;
 	font-family:  'ColaborateBoldRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000 ;
-	font-size: 24pt ;
+	font-size: 14pt ;
 }
-
-.thumbnail {
-	float: left ;
-	width: 250px ;
-	margin: 0 15px 15px 0 ;
+#feedbackFieldset {
+	position: absolute ;
+	height: 250px ;
+	width: 300px ;
+	margin-left: -150px ;
+	margin-top: -150px ;
+	left: 50% ;
+	top: 50% ;
 }
-
-/* story */
-#contentArea {
-	background-color: #FFF ;
-	color: #000 ;
-	margin-top:40px;
-}
-#contentArea *{
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #000 ;
+label {
 	
 }
+ul {
+	padding: 0 ;
+}
+li { 	
+	font-size: 14pt ;
+	color: #000 ; 
+	list-style: none ;
+	margin-top: 5px ;
+}
 
-#leftColumn h3 {
-	color #000 ;
-	font-size: 14pt;
-	font-weight: bold ;
+#submit {
+	left: 35% ;
+	position: relative ;
 }
-#leftColumn p {
-	color: #000 ;
-	font-size: 12pt ;
-	line-height: 1.3em ;
+.verticalAlign {
+	vertical-align: top ;
 }
-.content-element {
-	margin-top: 40px ;
-	margin-left: 68px ;
-}
-.content-element * {
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.content-element p {
-	line-height:1.4em;
-	margin-bottom:1em;
-}
-.content-element h2 {
-	font-size:200%;
-}
-.about:first-letter {
-	font-weight:700 ;
-	font-size: larger ;
-}
+
+
 
 
 /*
@@ -109,30 +93,8 @@ px      68    160    252    344    436    528    620    712
  */
  
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-	.dossier-start-bg {height:576px;}
 	
-	#arrow {bottom:60px;right:180px;}
-	.content-element p {
-		font-size:16px;
-	}
-
-	#leftColumn {
-		position: absolute ;
-		width: 464px ;
-		float: left ;
-		margin-top: 20px ;
-	}
-	#rightColumn {
-		position: absolute;
-		float: right;
-		left: 464px ;
-		width: 304px ;
-		height: 349px ;
-		background: url('../../images/morgridge/rotate.png') no-repeat 86 95 ;
-	}
-	#leftColumn p {
-		line-height: 1.4em ;
-	}
+	
 	
 }
 
@@ -153,16 +115,10 @@ px      68    160    252    344    436    528    620    712    804    896
 */
 
 @media only screen and (max-device-width: 1024px) and (orientation:landscape) {
-	.dossier-start-bg {height:768px;}
-	
-	#arrow {bottom:20px;right:260px;}
-	.content-element p {
-		font-size:16px;
-	}
-	
-	#leftColumn {
+	#feedback{
 		position: absolute ;
-		width: 968px ;
+		height: 768px ;
+		width: 1024px ;
 	}
 	
 }

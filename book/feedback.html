@@ -1,0 +1,50 @@
+<!-- this page is unused in the March issue, but can be used as an example of a working thumbnail/popup gallery using photoswipe (jquery). -->
+<!-- Documentation/files at photoswipe.com -->
+<html>
+	<head>
+    	<title>Feedback</title>
+		<meta charset="utf-8">
+        <!--Prevent pinch to zoom on iOS devices-->
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+        <!--Allow saving as a web app on the home screen on iOS Devices (doesn't apply in Baker)-->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!--If the page is saved as a web app, the statusbar will be black-translucent (doesn't apply in Baker)-->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <!--Prevent phone number detection on iOS devices-->
+        <meta name="format-detection" content="telephone=no" />
+        <link type="text/css" href="styles/styles.css" rel="stylesheet" /> <!-- not photoswipe related -->
+        <link type="text/css" href="styles/dossiers/feedback.css" rel="stylesheet" /> <!-- not photoswipe related -->
+        <script type="text/javascript" src="js/dossiers/feedback.js"></script>
+    </head>
+    <body>
+    	
+    	<div id="feedback">
+        	
+        	<form name="feedbackForm" action="http://www.phantom42.com/formtest.cfm" method="post" onSubmit="return validate();">
+            	<fieldset id="feedbackFieldset">
+                	<legend>Send us your feedback!</legend>
+                    <table>
+                    	<tr>
+                        	<td><label for="firstName">First Name:</label></td>
+                            <td><input type="text" name="firstName" id="firstName" value=""/></td>
+                        </tr>
+                        <tr>
+                        	<td><label for="lastName">Last Name:</label></td>
+                            <td><input type="text" name="lastName" id="lastName" value=""/></td>
+                        </tr>
+                        <tr>
+                        	<td><label for="email">Email:</label></td>
+                            <td><input type="text" name="email" id="email" value=""/></td>
+                        </tr>
+                        <tr>
+                        	<td class="verticalAlign"><label for="comments">Comments:</label></td>
+                            <td><textarea name="comments" id="comments" rows="5" cols="20"></textarea></td>
+                        </tr>
+                    </table>
+                    <input type="submit" id="submit" name="submit" class="submit" value="Send Feedback"/>
+                   
+                </fieldset>                
+            </form>
+        </div>
+    </body>
+</html>
