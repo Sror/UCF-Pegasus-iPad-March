@@ -18,28 +18,40 @@
     </head>
     <body>
     	
-    	<div id="feedback">
+    	<div id="feedback"> 
         	
-        	<form name="feedbackForm" action="http://www.phantom42.com/formtest.cfm" method="post" onSubmit="return validate();">
+        	<form name="feedbackForm" action="https://docs.google.com/spreadsheet/formResponse?formkey=dFVCR3BJWUM5U1NzVU54VWVQa3haMEE6MQ&ifq" method="post" onSubmit="">
             	<fieldset id="feedbackFieldset">
-                	<legend>Send us your feedback!</legend>
+                	<legend>How did you find us?</legend>
                     <table>
                     	<tr>
-                        	<td><label for="firstName">First Name:</label></td>
-                            <td><input type="text" name="firstName" id="firstName" value=""/></td>
+                        	<td><label for="entry.0.single">First Name:</label></td>
+                            <td><input type="text" name="entry.0.single" id="entry.0.single" value=""/></td>
                         </tr>
                         <tr>
-                        	<td><label for="lastName">Last Name:</label></td>
-                            <td><input type="text" name="lastName" id="lastName" value=""/></td>
+                        	<td><label for="entry.1.single">Last Name:</label></td>
+                            <td><input type="text" name="entry.1.single" id="entry.1.single" value=""/></td>
                         </tr>
                         <tr>
-                        	<td><label for="email">Email:</label></td>
-                            <td><input type="text" name="email" id="email" value=""/></td>
+                        	<td class="verticalAlign"><label for="">Referral:</label></td>
+                            <td>
+                            	<input type="radio" name="entry.2.group" id="group.2.1" value="Printed Ad"/><label for="group.2.1">Printed Ad</label><br>
+                                <input type="radio" name="entry.2.group" id="group.2.1" value="Television"/><label for="group.2.1">Television</label><br>
+                                <input type="radio" name="entry.2.group" id="group.2.1" value="Radio"/><label for="group.2.1">Radio</label><br>
+                                <input type="radio" name="entry.2.group" id="group.2.1" value="Word of Mouth"/><label for="group.2.1">Word of Mouth</label><br>
+                            </td>
                         </tr>
                         <tr>
-                        	<td class="verticalAlign"><label for="comments">Comments:</label></td>
-                            <td><textarea name="comments" id="comments" rows="5" cols="20"></textarea></td>
+                        	<td><label for="entry_3">State:</label></td>
+                            <td>
+                            	<select name="entry_3" id="entry_3">
+                                	<option value="Florida">Florida</option>
+                                    <option value="New York">New York</option>
+                                    <option value="Georgia">Georgia</option>
+                                </select>
+                            </td>
                         </tr>
+                        
                     </table>
                     <input type="submit" id="submit" name="submit" class="submit" value="Send Feedback"/>
                    

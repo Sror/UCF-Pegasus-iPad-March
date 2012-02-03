@@ -1,4 +1,6 @@
 validate = function() {
+	// the below code is just proof of concept that basic validation works in the iPad app. It's not pretty, but it works.
+	/*
 	var f = document.feedbackForm ;
 	if (f.firstName.value.length === 0) {
 		alert('First Name is required') ;
@@ -13,5 +15,6 @@ validate = function() {
 		alert('Comments are required') ;
 		return false ;
 	}
+	*/
 	return true ;
 }
