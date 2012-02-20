@@ -19,7 +19,7 @@
     <body>
     	
     	<div id="feedback"> 
-        	
+        	<h1>Feedback</h1>
         	<form name="feedbackForm" action="https://docs.google.com/spreadsheet/formResponse?formkey=dFVCR3BJWUM5U1NzVU54VWVQa3haMEE6MQ&ifq" method="post" onSubmit="">
             	<fieldset id="feedbackFieldset">
                 	<legend>How did you find us?</legend>
@@ -51,12 +51,20 @@
                                 </select>
                             </td>
                         </tr>
-                        
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" id="submit" name="submit" class="submit" value="Send Feedback"/>
+                            </td>
+                        </tr>
                     </table>
-                    <input type="submit" id="submit" name="submit" class="submit" value="Send Feedback"/>
-                   
-                </fieldset>                
+                    <div id="email">
+                        <span class="large">or</span>
+                        <br />
+                        <a href="mailto:webcom@mail.ucf.edu?subject=Pegasus%20Magazine%20Feedback">Send us an email</a>
+                    </div>
+                </fieldset>
             </form>
+            
         </div>
     </body>
 </html>
