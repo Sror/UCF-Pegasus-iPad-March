@@ -1,0 +1,5 @@
+html,
+body {margin:0;padding:0;}
+ul {margin:0;padding:5px;width:100%;background-color:#000;border-top:2px solid #EDBB18;}
+ul > li {list-style-type:none;}
+ul > li > a {font-family:"Helvetica Neue",Helvetica,sans-serif;color:#FFF !important;text-decoration:none;}
