@@ -21,6 +21,7 @@ body {
 	font-family:  'ColaborateBoldRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000 ;
 	font-size: 24pt ;
+	background: #FFF url('../../images/graduation/gradient.png') repeat-x top left;
 }
 
 .thumbnail {
@@ -28,48 +29,24 @@ body {
 	width: 250px ;
 	margin: 0 15px 15px 0 ;
 }
-
-/* story */
-#contentArea {
-	background-color: #FFF ;
-	color: #000 ;
-	margin-top:40px;
+h1 {
+	font-size:30px;
+	font-family:"Helvetica Neue",Helvetica,sans-serif;
+	margin-left:30px;
+	margin-bottom:10px;
+	margin-top:10px;
 }
-#contentArea *{
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #000 ;
-	
+ul {
+	margin:0;
+	padding:0;
 }
-
-#leftColumn h3 {
-	color #000 ;
-	font-size: 14pt;
-	font-weight: bold ;
+#graduation p {
+	font-size:20px;
+	margin-left:30px;
+	margin-top:10px;
+	margin-right:30px;
+	color:#000;
 }
-#leftColumn p {
-	color: #000 ;
-	font-size: 12pt ;
-	line-height: 1.3em ;
-}
-.content-element {
-	margin-top: 40px ;
-	margin-left: 68px ;
-}
-.content-element * {
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.content-element p {
-	line-height:1.4em;
-	margin-bottom:1em;
-}
-.content-element h2 {
-	font-size:200%;
-}
-.about:first-letter {
-	font-weight:700 ;
-	font-size: larger ;
-}
-
 
 /*
 ##########################################################################
