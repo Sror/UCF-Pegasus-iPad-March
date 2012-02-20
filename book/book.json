@@ -5,14 +5,14 @@
 	"url":		"book://www.ucf.edu",
 	
 	"contents":	[
-        "cover.html",
-        "graduation.html",
-        "feedback.html",
+    	"cover.html",
         "spiritsplash.html",
         "morgridge.html",
         "tosh.html",
+        "graduation.html",
         "volleyball.html",
         "aboldmove.html",
+        "feedback.html",
         "bucky.html"
 	],
 	
